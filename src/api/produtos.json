@@ -1,0 +1,11 @@
+{
+  "produtos":[
+    {
+      "id": 1,
+      "titulo": "Produto XYZ",
+      "categoria": "star wars",
+      "preco": "R$ 60,00",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    }
+  ]
+}
