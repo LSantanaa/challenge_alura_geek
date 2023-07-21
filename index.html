@@ -7,6 +7,77 @@
 </head>
 <body>
   
+  <header class="container__header">
+    <div class="container__logo">
+      <a href="index.html">
+        <img src="./public/images/logo.svg" alt="logo AluraGeek">
+      </a>
+    </div>
+
+    <div class="container__header__pesquisa">
+      <input type="search" name="search" id="search" placeholder="O que você deseja encontrar?" data-search>
+    </div>
+
+    <div class="container__header__btnLogin">
+      <a href="login.html" class="btnLogin">Login</a>
+    </div>
+
+  </header>
+
+  <!-- Carousel? talvez -->
+  <section class="container__hero">
+    <h1>Julho Promocional</h1>
+    <p>Produtos selecionados com 33% de desconto</p>
+    <a href="produtos.html">Ver Ofertas</a>
+  </section>
+
+  <main class="container__main">
+    <div class="container__categoria">
+      <div class="flex">
+        <h2>Star Wars</h2>
+        <a href="produtos.html">Ver tudo</a>
+      </div>
+      <ul class="container__list" data-lista-produtos>
+        <li>
+          <img class="list__item__img" src="" alt="">
+          <div>
+            <p class="list__item___title">Produto</p>
+            <p class="list__item__preco">R$ 60,00</p>
+            <a href="">Ver Produto</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="container__footer">
+    <div class="container__logo">
+      <a href="#">
+        <img src="./public/images/logo.svg" alt="logo AluraGeek">
+      </a>
+    </div>
+    <aside class="container__footer__center">
+      <ul class="container__footer__menu">
+        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Politica de privacidade</a></li>
+        <li><a href="#">Programa de fidelidade</a></li>
+        <li><a href="#">Nossas Lojas</a></li>
+        <li><a href="#">Quero ser franqueado</a></li>
+        <li><a href="#">Anuncie Aqui</a></li>
+      </ul>
+    </aside>
+    <aside class="container__footer__formulario">
+      <form action="">
+        <h3>Fale Conosco</h3>
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name">
+        <label for="mensagem">Sua mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="5" ></textarea>
+
+        <button type="submit" data-btn-submit>Enviar Mensagem</button>
+      </form>
+      </aside>
+  </footer>
 
   <script type="module" src="./public/js/"></script>
 </body>

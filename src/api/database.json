@@ -1,0 +1,153 @@
+{
+  "categorias":[
+    "Star Wars",
+    "Consoles",
+    "Roupas"
+  ],
+  "produtos":[
+    {
+      "id": 1,
+      "titulo": "Caneca StormTrooper",
+      "categoria": "star wars",
+      "preco": "R$ 30,00",
+      "descricao": "Desperte a força do seu café da manhã com esta incrível caneca temática do Stormtrooper. Feita de cerâmica de alta qualidade, esta caneca apresenta um design detalhado e autêntico do icônico soldado do Império Galáctico. Perfeita para fãs de Star Wars e colecionadores, é também uma excelente opção de presente para qualquer entusiasta da saga.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 2,
+      "titulo": "Lego Darth Vader/Dark Trooper",
+      "categoria": "star wars",
+      "preco": "R$ 80,00",
+      "descricao": "Reviva a batalha épica entre o bem e o mal com este conjunto LEGO exclusivo do Darth Vader e Dark Trooper. Construa e recrie suas cenas favoritas de Star Wars com esses detalhados personagens. O conjunto inclui peças e instruções fáceis de seguir para montagem. Ideal para fãs de todas as idades e colecionadores de LEGO.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 3,
+      "titulo": "Action Figure Mestre Yoda",
+      "categoria": "star wars",
+      "preco": "R$ 49,90",
+      "descricao": "Sinta a sabedoria e o poder da Força com esta action figure detalhada do Mestre Yoda. Com aproximadamente 15 cm de altura, esta figura articulada permite que você posicione o Yoda em várias poses emblemáticas. Seja para brincar ou colecionar, esta figura é essencial para qualquer fã de Star Wars e entusiasta de action figures.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 4,
+      "titulo": "Action Figure StormTrooper",
+      "categoria": "star wars",
+      "preco": "R$ 49,90",
+      "descricao": "Lidere as fileiras do Império com esta action figure do Stormtrooper. Com design autêntico e articulações móveis, este boneco permite que você recrie batalhas épicas e cenas de ação emocionantes. Seja parte da legião imperial e adicione este item à sua coleção de action figures de Star Wars.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 5,
+      "titulo": "Pelúcia Baby Yoda",
+      "categoria": "star wars",
+      "preco": "R$ 75,00",
+      "descricao": "Conheça o adorável Baby Yoda em forma de pelúcia! Inspirado na série \"The Mandalorian\", esta pelúcia captura a ternura e a fofura do personagem amado por todos. Feita com materiais de alta qualidade e extremamente macia ao toque, é a companhia perfeita para fãs de todas as idades.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 6,
+      "titulo": "Action Figure Kylo Ren",
+      "categoria": "star wars",
+      "preco": "R$ 49,90",
+      "descricao": "Entre no lado sombrio com esta action figure do Kylo Ren. Com detalhes excepcionais, esta figura articulada permite que você recrie momentos cruciais da trilogia sequela de Star Wars. Seja para colecionar ou exibir, esta figura é um imperdível para os seguidores da saga.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 7,
+      "titulo": "Controle Xbox Series",
+      "categoria": "console",
+      "preco": "R$ 200,00",
+      "descricao": "Domine o jogo com o controle Xbox Series X. Projetado ergonomicamente para conforto durante horas de jogo, este controle oferece precisão e resposta rápida. Compatível com o console Xbox Series X e outros dispositivos compatíveis, este é o controle ideal para os jogadores mais exigentes.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 8,
+      "titulo": "Playstation 5",
+      "categoria": "console",
+      "preco": "R$ 4.299,90",
+      "descricao": "Descubra a próxima geração do entretenimento com o Playstation 5. Com gráficos impressionantes, tempos de carregamento ultrarrápidos e recursos inovadores, o PS5 levará sua experiência de jogo a um novo patamar. Seja você um jogador casual ou hardcore, este console é o futuro do entretenimento digital.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 9,
+      "titulo": "Nintendo CLássico",
+      "categoria": "console",
+      "preco": "R$ 2000,00",
+      "descricao": "Reviva a nostalgia dos jogos retrô com o Nintendo Clássico. Este console compacto apresenta uma seleção de jogos clássicos incorporados, proporcionando horas de diversão para jogadores de todas as idades. Seja você um jogador antigo ou novo para os clássicos, o Nintendo Clássico é uma escolha excepcional.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 10,
+      "titulo": "Controles Switch",
+      "categoria": "console",
+      "preco": "R$ 350,00",
+      "descricao": "Aproveite ao máximo sua experiência de jogo no Nintendo Switch com esses controles adicionais. Com design elegante e confortável, esses controles são fáceis de usar e permitem jogar com amigos e familiares. Adicione mais jogadores à ação e mergulhe nos seus jogos favoritos do Switch.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 11,
+      "titulo": "Xbox Series X",
+      "categoria": "console",
+      "preco": "R$ 3.900,00",
+      "descricao": "Mergulhe no poder do Xbox Series X, o console de próxima geração que oferece gráficos incríveis, carregamento rápido e uma biblioteca impressionante de jogos. Experimente ação de tirar o fôlego, aventuras épicas e jogos multijogador online como nunca antes. O Xbox Series X é a escolha definitiva para jogadores apaixonados.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 12,
+      "titulo": "GameBoy Color",
+      "categoria": "console",
+      "preco": "R$ 330,00",
+      "descricao": "Volte no tempo com o clássico GameBoy Color. Este console portátil icônico permite que você jogue seus jogos favoritos em 8 bits em qualquer lugar que vá. Com uma tela colorida, é a maneira perfeita de reviver os momentos nostálgicos da sua infância e aproveitar uma ampla variedade de jogos clássicos.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 13,
+      "titulo": "Camiseta Atari",
+      "categoria": "roupas",
+      "preco": "R$ 70,00",
+      "descricao": "Mostre seu amor pela era dos jogos clássicos com esta camiseta Atari estilosa. Com o logotipo icônico da Atari estampado na frente, esta camiseta é perfeita para fãs de jogos retrô e entusiastas da história dos videogames.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 14,
+      "titulo": "Camiseta SNES",
+      "categoria": "roupas",
+      "preco": "R$ 70,00",
+      "descricao": "Celebre o legado do Super Nintendo com esta camiseta SNES. Apresentando o design do clássico console de 16 bits, esta camiseta é uma homenagem aos jogos e personagens que cativaram gerações de jogadores. Seja nostálgico com estilo usando esta camiseta retrô.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 15,
+      "titulo": "Camiseta Darth Vader",
+      "categoria": "roupas, star wars",
+      "preco": "R$ 70,00",
+      "descricao": "Abra espaço para o lado sombrio com esta camiseta do Darth Vader. Com a imagem imponente do vilão de Star Wars estampada, esta camiseta é perfeita para fãs do Império e da saga espacial. Mostre seu amor por Star Wars com orgulho usando esta camiseta.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 16,
+      "titulo": "Camiseta Marvel",
+      "categoria": "roupas",
+      "preco": "R$ 70,00",
+      "descricao": "Junte-se aos heróis mais poderosos da Terra com esta camiseta da Marvel. Apresentando uma estampa impressionante com os personagens icônicos da Marvel, esta camiseta é uma declaração de estilo para os fãs do universo dos quadrinhos e filmes.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 17,
+      "titulo": "Camiseta Mario Bross",
+      "categoria": "roupas",
+      "preco": "R$ 70,00",
+      "descricao": "Traga a magia do Reino do Cogumelo para o seu guarda-roupa com esta camiseta do Mario Bros. Com uma estampa vibrante do icônico encanador da Nintendo, esta camiseta é um must-have para fãs de longa data e novos jogadores do universo Mario.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    },
+    {
+      "id": 18,
+      "titulo": "Camiseta Naruto",
+      "categoria": "console",
+      "preco": "R$ 70,00",
+      "descricao": "Canalize a determinação do ninja mais amado com esta camiseta do Naruto. Com uma estampa estilizada do personagem principal, esta camiseta é uma homenagem a uma das séries de anime mais aclamadas do mundo.",
+      "imageURL": "../../public/images/caneca__stormtrooper."
+    }
+  ]
+}
