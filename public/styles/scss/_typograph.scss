@@ -1,0 +1,89 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  line-height: normal;
+  font-style: normal;
+  color: $black__100;
+}
+h1,h2{
+  font-size: 1.375rem;
+}
+a{
+  text-decoration: none;
+  color: $blue__100;
+}
+
+p{
+  color:  $black__100;
+}
+
+input, textarea{
+  font-size: 1rem;
+}
+.container__hero{
+  h1{
+    color: $white;
+  }
+  p{
+    color: $white;
+    font-size: .875rem;
+    font-weight: 700;
+  }
+}
+.btn{
+  // width: 120px;
+  border: 1px solid $blue__100;
+  border-radius: .5rem;
+  padding: .775rem 1rem;
+  text-align: center;
+  font-size: .875rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.btnLogin:hover{
+  background-color: $blue__20;
+  transform: scale(1.04);
+  letter-spacing: 0.4em;
+}
+
+.btnBlue{
+  background-color: $blue__100;
+  color: $white;
+
+  &:hover{
+    background-color: $blue__80;
+    transform: scale(1.04);
+   letter-spacing: 0.1em;
+  }
+}
+
+.btnSubmitMensagem{
+  width: 100%;
+  background-color: $blue__100;
+  color: $white;
+
+  &:hover{
+    background-color: $blue__80;
+
+  }
+}
+
+.ver__tudo a{
+  font-weight: 800;
+}
+.list__item {
+  &__preco, &__verProd{
+    font-weight: 700;
+  }
+  &__verProd{
+    color: $blue__100;
+  }
+}
+
+.container__footer{
+  li a{
+    color: $black__100;
+    text-align: center;
+    font-weight: 550;
+  }
+}

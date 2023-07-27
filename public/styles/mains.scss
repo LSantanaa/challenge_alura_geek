@@ -1,0 +1,53 @@
+@import './scss/colors';
+ /*reset*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all .4s ease;
+}
+
+body, html{
+  width: 100%;
+  background-color: $white__50;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  display: inline-block;
+}
+input, button, textarea{
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+/*classes gerais*/
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+.center{
+  justify-content: center;
+}
+.between{
+  justify-content: space-between;
+}
+.collumn{
+  flex-direction: column;
+}
+.row{
+  flex-direction: row;
+}
+.m__auto{
+  margin: 0 auto;
+}
+
+
+@import './scss/typograph';
+@import './scss/layout';
+@import './scss/animations';
+@import './scss/media__queries'

@@ -3,79 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/styles/mains.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="./public/js/SVGInject.min.js"></script>
+
   <title>Alura Geek</title>
+
 </head>
 <body>
   
-  <header class="container__header">
-    <div class="container__logo">
+  <header class="container__header flex between m__auto container__lg">
+    <div class="container__header__logo">
       <a href="index.html">
         <img src="./public/images/logo.svg" alt="logo AluraGeek">
       </a>
     </div>
 
     <div class="container__header__pesquisa">
-      <input type="search" name="search" id="search" placeholder="O que você deseja encontrar?" data-search>
+      <form action="" class="flex between">
+        <input type="search" name="search" id="search" placeholder="O que você deseja encontrar?" data-search>
+        <button data-btn-search class="btn__search" type="submit">Search</button>
+      </form>
     </div>
 
     <div class="container__header__btnLogin">
-      <a href="login.html" class="btnLogin">Login</a>
+      <a href="login.html" class="btn btnLogin">Login</a>
     </div>
 
   </header>
 
   <!-- Carousel? talvez -->
-  <section class="container__hero">
-    <h1>Julho Promocional</h1>
-    <p>Produtos selecionados com 33% de desconto</p>
-    <a href="produtos.html">Ver Ofertas</a>
+  <section class="container__hero flex">
+    <div class="container__hero__content flex collumn  m__auto container__lg">
+      <h1>Julho Promocional</h1>
+      <p>Produtos selecionados com 33% de desconto</p>
+      <a href="produtos.html" class="btn btnBlue">Ver Ofertas</a>
+    </div>
   </section>
 
-  <main class="container__main">
+  <main class="container__main  m__auto container__lg">
     <div class="container__categoria">
-      <div class="flex">
+      <div class="flex between">
         <h2>Star Wars</h2>
-        <a href="produtos.html">Ver tudo</a>
+        <div class="flex ver__tudo">
+          <a href="produtos.html" >Ver tudo</a>
+          <img src="./public/images/arrow_back_black.svg" onload="SVGInject(this)" alt="arrow right">
+        </div>
       </div>
-      <ul class="container__list" data-lista-produtos>
-        <li>
-          <img class="list__item__img" src="" alt="">
-          <div>
-            <p class="list__item___title">Produto</p>
-            <p class="list__item__preco">R$ 60,00</p>
-            <a href="">Ver Produto</a>
-          </div>
+      <ul class="container__main__list" data-lista-produtos>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
         </li>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+       
       </ul>
     </div>
   </main>
 
-  <footer class="container__footer">
-    <div class="container__logo">
-      <a href="#">
-        <img src="./public/images/logo.svg" alt="logo AluraGeek">
-      </a>
+  <footer class="container__footer ">
+    <div class="container__footer__menuFormArea flex center collumn container__lg m__auto">
+      <aside class="container__footer__left ">
+        <div class="container__logo">
+          <a href="#">
+            <img src="./public/images/logo.svg" alt="logo AluraGeek">
+          </a>
+        </div>
+        <ul class="container__footer__menu">
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Politica de privacidade</a></li>
+          <li><a href="#">Programa de fidelidade</a></li>
+          <li><a href="#">Nossas Lojas</a></li>
+          <li><a href="#">Quero ser franqueado</a></li>
+          <li><a href="#">Anuncie Aqui</a></li>
+        </ul>
+      </aside>
+      <aside class="container__footer__formulario flex collumn">
+        <h3 class="formulario__title">Fale Conosco</h3>
+        <form action="" class="flex collumn">
+          <div class="formulario__input">
+            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+            <label for="name">Digite seu nome</label>
+          </div>
+          <div class="formulario__input">
+            <textarea name="mensagem" id="mensagem" cols="30" placeholder="Como podemos Ajudar?" rows="5" required></textarea>
+            <label for="mensagem">Como podemos ajudar?</label>
+          </div>
+          <button type="submit" class="btn btnSubmitMensagem" data-btn-submit>Enviar Mensagem</button>
+        </form>
     </div>
-    <aside class="container__footer__center">
-      <ul class="container__footer__menu">
-        <li><a href="#">Quem Somos</a></li>
-        <li><a href="#">Politica de privacidade</a></li>
-        <li><a href="#">Programa de fidelidade</a></li>
-        <li><a href="#">Nossas Lojas</a></li>
-        <li><a href="#">Quero ser franqueado</a></li>
-        <li><a href="#">Anuncie Aqui</a></li>
-      </ul>
-    </aside>
-    <aside class="container__footer__formulario">
-      <form action="">
-        <h3>Fale Conosco</h3>
-        <label for="name">Nome</label>
-        <input type="text" id="name" name="name">
-        <label for="mensagem">Sua mensagem</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="5" ></textarea>
 
-        <button type="submit" data-btn-submit>Enviar Mensagem</button>
-      </form>
+      <div class="credits flex center collumn">
+        <p>Desenvolvido por Leonardo de Sant'Ana &copy; 2023</p> 
+        <p> Alura + One Todos os direitos reservados</p>
+      </div>
       </aside>
   </footer>
 
