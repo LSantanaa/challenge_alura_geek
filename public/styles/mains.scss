@@ -25,6 +25,9 @@ input, button, textarea{
 }
 
 /*classes gerais*/
+.relative{
+  position: relative;
+}
 
 .flex{
   display: flex;
@@ -45,7 +48,9 @@ input, button, textarea{
 .m__auto{
   margin: 0 auto;
 }
-
+.ativo{
+  display: flex !important;
+}
 
 @import './scss/typograph';
 @import './scss/layout';

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*reset*/
 * {
   padding: 0;
@@ -26,6 +27,10 @@ input, button, textarea {
 }
 
 /*classes gerais*/
+.relative {
+  position: relative;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -51,6 +56,10 @@ input, button, textarea {
   margin: 0 auto;
 }
 
+.ativo {
+  display: flex !important;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   line-height: normal;
@@ -69,9 +78,14 @@ a {
 
 p {
   color: #464646;
+  font-weight: 700;
 }
 
-input, textarea {
+label {
+  font-weight: 600;
+}
+
+input, textarea, select {
   font-size: 1rem;
 }
 
@@ -84,6 +98,15 @@ input, textarea {
   font-weight: 700;
 }
 
+.title {
+  color: #2a74e4;
+}
+
+.title__erro {
+  font-size: 2rem;
+}
+
+/*Botões*/
 .btn {
   border: 1px solid #2a74e4;
   border-radius: 0.5rem;
@@ -92,12 +115,16 @@ input, textarea {
   font-size: 0.875rem;
   font-weight: 700;
   font-style: normal;
+  cursor: pointer;
+  color: #2a74e4;
+}
+.btn:hover {
+  transform: scale(1.04);
+  letter-spacing: 0.4em;
 }
 
 .btnLogin:hover {
   background-color: #d4e4fa;
-  transform: scale(1.04);
-  letter-spacing: 0.4em;
 }
 
 .btnBlue {
@@ -106,8 +133,32 @@ input, textarea {
 }
 .btnBlue:hover {
   background-color: #5595e9;
-  transform: scale(1.04);
-  letter-spacing: 0.1em;
+}
+
+.btnEntrar {
+  width: 100%;
+  color: #fff;
+  background-color: #2a74e4;
+}
+.btnEntrar:hover {
+  background-color: #5595e9;
+}
+
+.btnFechar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  color: #5595e9;
+}
+.btnFechar:hover {
+  letter-spacing: normal;
+  color: #2a74e4;
+}
+
+.btnAddProd:hover {
+  letter-spacing: normal;
 }
 
 .btnSubmitMensagem {
@@ -117,6 +168,12 @@ input, textarea {
 }
 .btnSubmitMensagem:hover {
   background-color: #5595e9;
+}
+
+.validador__input {
+  display: inline-block;
+  color: #d92d2d;
+  margin-top: 0.5rem;
 }
 
 .ver__tudo a {
@@ -175,6 +232,129 @@ input, textarea {
   cursor: pointer;
 }
 
+/*FORMULÁRIO*/
+.formulario__input {
+  position: relative;
+  width: 100%;
+}
+.formulario__input input {
+  height: 50px;
+}
+.formulario__input input, .formulario__input textarea {
+  padding: 1rem 0.5rem 0;
+  border-bottom: 2px solid #464646;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.formulario__input label {
+  width: 95%;
+  pointer-events: none;
+  position: absolute;
+  z-index: 500;
+  background-color: #fff;
+  top: 0;
+  margin-top: 13px;
+}
+
+.formulario__input input:focus, textarea:focus {
+  border-bottom: 2px solid #2a74e4;
+}
+
+.formulario__input input::-moz-placeholder, textarea::-moz-placeholder {
+  color: transparent;
+}
+
+.formulario__input input::placeholder, textarea::placeholder {
+  color: transparent;
+}
+
+.formulario__input label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+}
+
+.formulario__input input:not(:-moz-placeholder-shown) + label, .formulario__input textarea:not(:-moz-placeholder-shown) + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #2a74e4;
+}
+
+.formulario__input input:focus + label, .formulario__input textarea:focus + label,
+.formulario__input input:not(:placeholder-shown) + label, .formulario__input textarea:not(:placeholder-shown) + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #2a74e4;
+}
+
+.formulario__categoria {
+  width: 100%;
+}
+.formulario__categoria .categoria__options {
+  margin-top: 1rem;
+  width: 100%;
+}
+.formulario__categoria .categoria__options input[type=checkbox] {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+.formulario__categoria .categoria__options input[type=checkbox]:hover + .check::before {
+  background: #5595e9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.formulario__categoria .categoria__options .check {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.formulario__categoria .categoria__options .check::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #5595e9;
+  border-radius: 0.1rem;
+  background-color: #fff;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.formulario__categoria .categoria__options input[type=checkbox]:checked + .check::before {
+  background: url("../images/check.svg") #2a74e4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*LOGIN MODAL*/
+.container__modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.container__modal__content {
+  position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #e7e2e2;
+  animation: modal-fadeIn 0.4s ease-in-out;
+}
+.container__modal__form {
+  gap: 1.5rem;
+}
+
 /*SECTION HERO*/
 .container__hero {
   width: 100%;
@@ -193,6 +373,9 @@ input, textarea {
 .container__main {
   padding: 1rem;
 }
+.container__main .container__categoria {
+  margin: 2rem 0;
+}
 .container__main .ver__tudo {
   gap: 4px;
 }
@@ -207,13 +390,21 @@ input, textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
-.container__main__list .list__item {
-  overflow: hidden;
+.container__main__list li {
+  display: none;
+}
+.container__main__list[data-lista-produtos] li {
+  display: block;
+  margin: 1rem 0;
 }
 .container__main__list .list__item a {
   display: block;
+  height: 100%;
+}
+.container__main__list .list__item a:hover {
+  transform: scale(1.05);
 }
 .container__main__list .list__item a:hover .list__item__img {
   transform: scale(1.15);
@@ -236,11 +427,14 @@ input, textarea {
   gap: 0.5rem;
   align-items: flex-start;
 }
-.container__main__list .list__item:nth-child(n+5) {
-  display: none;
+.container__main__list .list__item__title {
+  height: 40px;
+}
+.container__main__list .list__item:nth-child(-n+4) {
+  display: block;
 }
 
-/* AREA FOOTER*/
+/*AREA FOOTER*/
 .container__footer {
   padding: 1rem;
   background-color: #d4e4fa;
@@ -274,29 +468,6 @@ input, textarea {
   align-items: flex-start;
   gap: 0.5rem;
 }
-.container__footer__formulario form .formulario__input {
-  position: relative;
-  width: 100%;
-}
-.container__footer__formulario form .formulario__input input {
-  height: 50px;
-}
-.container__footer__formulario form .formulario__input input, .container__footer__formulario form .formulario__input textarea {
-  padding: 1rem 0.5rem 0;
-  border-bottom: 2px solid #464646;
-  border-radius: 0.5rem;
-  width: 100%;
-}
-.container__footer__formulario form .formulario__input label {
-  width: 95%;
-  pointer-events: none;
-  position: absolute;
-  z-index: 500;
-  background-color: #fff;
-  top: 0;
-  left: 8px;
-  margin-top: 13px;
-}
 .container__footer .credits {
   width: 100%;
   border-top: 1px solid #5595e9;
@@ -306,40 +477,22 @@ input, textarea {
   gap: 0.5rem;
 }
 
-.formulario__input input:focus, textarea:focus {
-  border-bottom: 2px solid #2a74e4;
+/*PÁGINA PRODUTOS DETAILS*/
+.container__produto__detail {
+  padding: 1rem;
 }
-
-.formulario__input input::-moz-placeholder, textarea::-moz-placeholder {
-  color: transparent;
+.container__produto__detailImg {
+  width: 100%;
+  height: 192px;
+  background: url("https://source.unsplash.com/OitYIbHSyWU");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-.formulario__input input::placeholder, textarea::placeholder {
-  color: transparent;
-}
-
-.formulario__input label {
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 13px;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-}
-
-.formulario__input input:not(:-moz-placeholder-shown) + label, .formulario__input textarea:not(:-moz-placeholder-shown) + label {
-  font-size: 13px;
-  margin-top: 0;
-  color: #2a74e4;
-}
-
-.formulario__input input:focus + label, .formulario__input textarea:focus + label,
-.formulario__input input:not(:placeholder-shown) + label, .formulario__input textarea:not(:placeholder-shown) + label {
-  font-size: 13px;
-  margin-top: 0;
-  color: #2a74e4;
+.container__produto__detailDescription {
+  margin-top: 1rem;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 @keyframes arrow {
@@ -352,7 +505,26 @@ input, textarea {
     transform: translateX(1px);
   }
 }
+/*modal animation*/
+@keyframes modal-fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /*Tablet and Desktop*/
+@media screen and (min-width: 800px) {
+  .container__modal__content {
+    width: 30%;
+  }
+  .container__modal__form {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 470px) {
   .container__header {
     padding: 1rem 2rem;
@@ -381,6 +553,13 @@ input, textarea {
   .container__hero p {
     font-size: 1.375rem;
   }
+  .container__produto__detailContent {
+    flex-direction: row;
+  }
+  .container__produto__detailDescription {
+    margin-top: 0;
+    padding: 1rem;
+  }
   .container__main {
     padding: 32px;
   }
@@ -402,7 +581,7 @@ input, textarea {
   .container__main__list {
     grid-template-columns: repeat(6, 1fr);
   }
-  .container__main__list .list__item:nth-child(n+5) {
+  .container__main__list .list__item:nth-child(-n+6) {
     display: block;
   }
   .container__footer__menuFormArea {

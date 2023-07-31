@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
   <!-- SCSS -->
-  <link rel="stylesheet" href="./public/styles/mains.css">
+  <link rel="stylesheet" href="../../public/styles/mains.css">
   <!-- SVG Inject Function -->
-  <script src="./public/js/SVGInject.min.js"></script>
+  <script src="../../public/js/SVGInject.min.js"></script>
   
   <title>Alura Geek</title>
 
@@ -19,8 +19,8 @@
   
   <header class="container__header flex between m__auto container__lg">
     <div class="container__header__logo">
-      <a href="./index.html">
-        <img src="./public/images/logo.svg" alt="logo AluraGeek">
+      <a href="../../index.html">
+        <img src="../../public/images/logo.svg" alt="logo AluraGeek">
       </a>
     </div>
 
@@ -57,25 +57,76 @@
 
   </header>
 
-  <!-- Carousel? talvez -->
-  <section class="container__hero flex">
-    <div class="container__hero__content flex collumn  m__auto container__lg">
-      <h1>Julho Promocional</h1>
-      <p>Produtos selecionados com até 33% de desconto</p>
-      <a href="#oferta" class="btn btnBlue">Ver Ofertas</a>
-    </div>
-  </section>
+  <main class="container__main  m__auto container__lg">
+    <div class="container__categoria">
+      <div class="flex between">
+        <h2>Todos os produtos</h2>
+        <div class="flex">
+         <button id="btnAddProd" class="btn btnAddProd">Adicionar Produto</button>
+        </div>
 
-  <main class="container__main  m__auto container__lg" data-content>
-  
+        <div id="modalAddProduto" class="container__modal flex center">
+          <div class="container__modal__content flex center">
+            <button aria-label="Fechar popUp" data-btnFechar class="btn btnFechar">X</button>
+            <form class="container__modal__form flex collumn" action="">
+              <p>Adicionar Produto</p>
+              <div class="formulario__input">
+                <input type="text" name="img" id="img" placeholder="URL da Imagem">
+                <label for="img">Url da Imagem</label>
+                <span class="validador__input"></span>
+              </div>
+              <div class="formulario__categoria">
+                <p>Selecione ao menos uma categoria</p>
+                <div class="categoria__options flex between">
+                  <div class="flex relative">
+                    <input type="checkbox" id="console" value="console"/>
+                    <label class="check" for="console">Console</label>
+                  </div>
+                  <div class="flex relative">
+                    <input type="checkbox" id="starWars" value="starWars"/>
+                    <label class="check" for="starWars">Star Wars</label>
+                  </div>
+                  <div class="flex relative">
+                    <input type="checkbox" id="roupas" value="roupas"/>
+                    <label class="check" for="roupas">Roupas</label>
+                  </div>
+                 </div> 
+                <div class="categorias__marcadas"></div>
+                <span class="validador__input"></span>
+              </div>
+              <div class="formulario__input">
+                <input type="text" name="nome"  id="nome" placeholder="Digite sua senha">
+                <label for="pw">Digite sua senha</label>
+                <span class="validador__input"></span>
+              </div>
+              <div class="formulario__input">
+                <input type="text" name="preco"  id="preco" placeholder="Preço do produto">
+                <label for="preco">Preço do produto</label>
+                <span class="validador__input"></span>
+              </div>
+              <div class="formulario__input">
+                <textarea cols="30" rows="5" name="desc" id="desc" placeholder="Descrição do produto"></textarea>
+                <label for="desc">Descrição do produto</label>
+                <span class="validador__input"></span>
+              </div>
+              <button type="submit" id="btnConfirmAddProd" class="btn btnEntrar">Adicionar Produto</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <ul class="container__main__list" data-lista-produtos>
+        
+      </ul>
+    </div>
   </main>
 
   <footer class="container__footer ">
     <div class="container__footer__menuFormArea flex center collumn container__lg m__auto">
       <aside class="container__footer__left ">
         <div class="container__logo">
-          <a href="index.html">
-            <img src="./public/images/logo.svg" alt="logo AluraGeek">
+          <a href="../../index.html">
+            <img src="../../public/images/logo.svg" alt="logo AluraGeek">
           </a>
         </div>
         <ul class="container__footer__menu">
@@ -109,7 +160,7 @@
       </aside>
   </footer>
 
-  <script type="module" src="./public/js/app.js"></script>
-  <script type="module" src="./src/controllers/main.js"></script>
+  <script type="module" src="../../public/js/app.js"></script>
+  <script type="module" src="../controllers/main.js"></script>
 </body>
 </html>

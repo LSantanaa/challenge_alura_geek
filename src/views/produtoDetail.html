@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GOOGLE FONT RALEWAY FAMILY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- SCSS -->
+  <link rel="stylesheet" href="../../public/styles/mains.css">
+  <!-- SVG Inject Function -->
+  <script src="../../public/js/SVGInject.min.js"></script>
+  
+  <title>Alura Geek</title>
+
+</head>
+<body>
+  
+  <header class="container__header flex between m__auto container__lg">
+    <div class="container__header__logo">
+      <a href="../../index.html">
+        <img src="../../public/images/logo.svg" alt="logo AluraGeek">
+      </a>
+    </div>
+
+    <div class="container__header__pesquisa">
+      <form action="" class="flex between">
+        <input type="search" name="search" id="search" placeholder="O que você deseja encontrar?" data-search>
+        <button data-btn-search class="btn__search" type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="container__header__btnLogin">
+      <button class="btn btnLogin" id="btnLogin">Login</button>
+    </div>
+
+    <div id="modalLogin" class="container__login__modal flex center">
+      <div class="container__login__modal__content flex center">
+        <button aria-label="Fechar popUp" id="btnFecharModal" class="btn btnFechar">X</button>
+        <form class="container__login__modal__form flex collumn" action="">
+          <p>Iniciar Sessão</p>
+          <div class="formulario__input">
+            <input type="email" name="user" autocomplete="email" id="user" placeholder="Informe o seu email">
+            <label for="user">Digite seu email</label>
+            <span class="validador__input"></span>
+          </div>
+          <div class="formulario__input">
+            <input type="password" name="pw" autocomplete="current-password" id="pw" placeholder="Digite sua senha">
+            <label for="pw">Digite sua senha</label>
+            <span class="validador__input"></span>
+          </div>
+          <button type="submit" id="btnEntrar" class="btn btnEntrar">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="container__produto__detail m__auto container__lg">
+    <div class="container__produto__detailContent flex collumn ">
+      <div class="container__produto__detailImg">
+       
+      </div>
+
+      <div class="container__produto__detailDescription flex collumn">
+        <h1 class="title">Caneca Stormtrooper</h1>
+        <p>R$ 60,00</p>
+        <p>Desperte a força do seu café da manhã com esta incrível caneca temática do Stormtrooper. Feita de cerâmica de alta qualidade, esta caneca apresenta um design detalhado e autêntico do icônico soldado do Império Galáctico. Perfeita para fãs de Star Wars e colecionadores, é também uma excelente opção de presente para qualquer entusiasta da saga.</p>
+      </div>
+
+    </div>
+  </section>  
+
+
+  <main class="container__main  m__auto container__lg">
+    <div class="container__categoria">
+      <div class="flex between">
+        <h2>Produtos Semelhantes</h2>
+        <div class="flex ver__tudo">
+          <a href="./produtos.html" >Ver tudo</a>
+          <img src="../../public/images/arrow_back_black.svg" onload="SVGInject(this)" alt="arrow right">
+        </div>
+      </div>
+      <ul class="container__main__list" data-lista-produtos>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+        <li class="list__item">
+            <a href="#">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+        <li class="list__item">
+            <a href="">
+              <div class="list__item__containerImg">
+                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
+              </div>
+              <div class="list__item__description flex collumn">
+                <p class="list__item___title">Produto</p>
+                <p class="list__item__preco">R$ 60,00</p>
+                <p class="list__item__verProd">Ver Produto </p>
+              </div>
+            </a>
+        </li>
+       
+      </ul>
+    </div>
+  </main>
+
+  <footer class="container__footer ">
+    <div class="container__footer__menuFormArea flex center collumn container__lg m__auto">
+      <aside class="container__footer__left ">
+        <div class="container__logo">
+          <a href="../../index.html">
+            <img src="../../public/images/logo.svg" alt="logo AluraGeek">
+          </a>
+        </div>
+        <ul class="container__footer__menu">
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Politica de privacidade</a></li>
+          <li><a href="#">Programa de fidelidade</a></li>
+          <li><a href="#">Nossas Lojas</a></li>
+          <li><a href="#">Quero ser franqueado</a></li>
+          <li><a href="#">Anuncie Aqui</a></li>
+        </ul>
+      </aside>
+      <aside class="container__footer__formulario flex collumn">
+        <h3 class="formulario__title">Fale Conosco</h3>
+        <form action="" class="flex collumn">
+          <div class="formulario__input">
+            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+            <label for="name">Digite seu nome</label>
+          </div>
+          <div class="formulario__input">
+            <textarea name="mensagem" id="mensagem" cols="30" placeholder="Como podemos Ajudar?" rows="5" required></textarea>
+            <label for="mensagem">Como podemos ajudar?</label>
+          </div>
+          <button type="submit" class="btn btnSubmitMensagem" data-btn-submit>Enviar Mensagem</button>
+        </form>
+    </div>
+
+      <div class="credits flex center collumn">
+        <p>Desenvolvido por Leonardo de Sant'Ana &copy; 2023</p> 
+        <p> Alura + One Todos os direitos reservados</p>
+      </div>
+      </aside>
+  </footer>
+
+  <script type="module" src="../../public/js/app.js"></script>
+</body>
+</html>

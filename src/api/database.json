@@ -2,7 +2,8 @@
   "categorias": [
     "Star Wars",
     "Consoles",
-    "Roupas"
+    "Roupas",
+    "Ofertas"
   ],
   "produtos": [
     {
@@ -104,7 +105,7 @@
     {
       "id": 13,
       "titulo": "Camiseta Atari",
-      "categoria": "roupas",
+      "categoria": "roupas, console",
       "preco": "R$ 70,00",
       "descricao": "Mostre seu amor pela era dos jogos clássicos com esta camiseta Atari estilosa. Com o logotipo icônico da Atari estampado na frente, esta camiseta é perfeita para fãs de jogos retrô e entusiastas da história dos videogames.",
       "imageURL": "https://i.pinimg.com/564x/86/0d/6a/860d6a6d0950438b6b5b0a6e0bc9457d.jpg"
@@ -112,7 +113,7 @@
     {
       "id": 14,
       "titulo": "Camiseta SNES",
-      "categoria": "roupas",
+      "categoria": "roupas, console",
       "preco": "R$ 70,00",
       "descricao": "Celebre o legado do Super Nintendo com esta camiseta SNES. Apresentando o design do clássico console de 16 bits, esta camiseta é uma homenagem aos jogos e personagens que cativaram gerações de jogadores. Seja nostálgico com estilo usando esta camiseta retrô.",
       "imageURL": "https://i.pinimg.com/564x/c3/c2/99/c3c299e3db39e2224ab37bdec6e11fb8.jpg"
@@ -144,10 +145,58 @@
     {
       "id": 18,
       "titulo": "Camiseta Naruto",
-      "categoria": "console",
+      "categoria": "roupas",
       "preco": "R$ 70,00",
       "descricao": "Canalize a determinação do ninja mais amado com esta camiseta do Naruto. Com uma estampa estilizada do personagem principal, esta camiseta é uma homenagem a uma das séries de anime mais aclamadas do mundo.",
       "imageURL": "https://i.pinimg.com/564x/3f/81/a0/3f81a0895f85e9d7316c113be8b3f04d.jpg"
+    },
+    {
+      "id": 19,
+      "titulo": "Nintendo Switch Lite",
+      "categoria": "console, oferta",
+      "preco": "R$ 1500,00",
+      "descricao": "Apresentamos o Nintendo Switch Lite, uma nova versão do console Nintendo Switch que foi otimizado para o jogo pessoal e portátil. Compatível com todos os jogos digitais ou em mídia física para o Nintendo Switch que possuam modo portátil.",
+      "imageURL": "https://source.unsplash.com/74kYIbjljDA"
+    },
+    {
+      "id": 20,
+      "titulo": "Playstation 4",
+      "categoria": "console, oferta",
+      "preco": "R$ 2800,00",
+      "descricao": "Com seu console PlayStation 4 você terá entretenimento garantido todos os dias. Sua tecnologia foi criada para colocar novos desafios para jogadores novatos e especialistas. Com o console PlayStation 4, líder mundial de vendas por anos, você poderá desfrutar de horas de jogo e excelente navegabilidade para desfrutar de filmes, séries e conteúdo online",
+      "imageURL": "https://source.unsplash.com/mwytIca3qNA"
+    },
+    {
+      "id": 21,
+      "titulo": "Camiseta Star Wars",
+      "categoria": "roupas, star wars, oferta",
+      "preco": "R$ 70,00",
+      "descricao": "Mostre sua devoção à galáxia muito, muito distante com esta camiseta Star Wars. Estampada com a logo clássica exibida em todos os filmes da saga, esta camiseta é uma adição incrível para o seu guarda-roupa.",
+      "imageURL": "https://images.tcdn.com.br/img/img_prod/723087/camiseta_star_wars_logo_8165_1_216d07bf81585c9a23a12c0a3924c619.png"
+    },
+    {
+      "id": 22,
+      "titulo": "Camiseta Playstation",
+      "categoria": "roupas, console, oferta",
+      "preco": "R$ 70,00",
+      "descricao": "Exiba sua paixão pelos jogos com esta camiseta Playstation. Com o logotipo reconhecível da marca estampado na frente, esta camiseta é uma escolha elegante e confortável para os fãs leais da plataforma de jogos. Seja você um jogador casual ou hardcore, esta camiseta é perfeita para mostrar seu orgulho gamer.",
+      "imageURL": "https://www.camisetas4fun.com.br/media/product/05f/camiseta-playstation-6bd.jpg"
+    },
+    {
+      "id": 23,
+      "titulo": "Action Figure Luke Skywalker",
+      "categoria": "star wars, oferta",
+      "preco": "R$ 70,00",
+      "descricao": "Recrie as emocionantes batalhas das estrelas com esta action figure detalhada do Luke Skywalker. Inspirado na clássica trilogia de Star Wars, este boneco articulado permite que você viva aventuras galácticas e cenas emblemáticas do herói. Com sua capa, sabre de luz e acessórios, esta figura é um must-have para qualquer coleção de Star Wars.",
+      "imageURL": "https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/2793dc5bb68a428db1f4334e59e01209_Original.jpg"
+    },
+    {
+      "id": 24,
+      "titulo": "Action Figure Iron Man",
+      "categoria": "oferta",
+      "preco": "R$ 70,00",
+      "descricao": "Prepare-se para salvar o mundo com esta action figure do Iron Man. Inspirada nos filmes da Marvel, esta figura articulada permite que você entre na pele do poderoso Tony Stark e crie suas próprias batalhas épicas. Com detalhes impressionantes e acessórios adicionais, esta figura é um item indispensável para fãs dos Vingadores e do Universo Cinematográfico Marvel.",
+      "imageURL": "https://images.yampi.me/assets/stores/minidengo/uploads/images/action-figure-homem-de-ferro-iron-man-mark-mk7-a-mk7-a-boxed-60f1af313b0d8-large.jpg"
     }
   ]
 }

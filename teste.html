@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Dropdown com Seleção Múltipla</title>
+    <style>
+        /* Estilo para o select personalizado */
+        .custom-select {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+           
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        /* Estilo para o botão do select */
+        .custom-select .select-btn {
+            padding: 5px 10px;
+        }
+
+        /* Estilo para o dropdown das opções */
+        .custom-select .select-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            max-height: 150px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            background-color: #fff;
+            display: none;
+        }
+
+        /* Estilo para as opções do dropdown */
+        .custom-select .select-dropdown option {
+            padding: 5px 10px;
+        }
+
+        /* Estilo para as opções selecionadas */
+        .selected-options {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-select">
+        <div class="select-btn" onclick="toggleDropdown()">Selecione suas opções</div>
+        <div class="select-dropdown">
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+            <option value="opcao4">Opção 4</option>
+            <option value="opcao5">Opção 5</option>
+        </div>
+    </div>
+
+    <div class="selected-options" id="selectedOptions"></div>
+
+    <script>
+        function toggleDropdown() {
+
+            const dropdown = document.querySelector('.custom-select .select-dropdown');
+            dropdown.style.display = 'block';
+        }
+
+        function updateSelectedOptions() {
+            const selectedOptions = Array.from(document.querySelectorAll('.custom-select .select-dropdown option:checked')).map(opt => opt.value);
+            document.getElementById('selectedOptions').textContent = selectedOptions.join(', ');
+        }
+
+        const dropdownOptions = document.querySelectorAll('.custom-select .select-dropdown option');
+        dropdownOptions.forEach(option => {
+            option.addEventListener('click', updateSelectedOptions);
+        });
+    </script>
+</body>
+</html>

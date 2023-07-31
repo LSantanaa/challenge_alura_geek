@@ -14,9 +14,14 @@ a{
 
 p{
   color:  $black__100;
+  font-weight: 700;
 }
 
-input, textarea{
+label{
+  font-weight: 600;
+}
+
+input, textarea, select{
   font-size: 1rem;
 }
 .container__hero{
@@ -29,8 +34,17 @@ input, textarea{
     font-weight: 700;
   }
 }
+
+.title{
+  color: $blue__100;;
+}
+
+.title__erro{
+  font-size: 2rem;
+}
+
+/*Botões*/
 .btn{
-  // width: 120px;
   border: 1px solid $blue__100;
   border-radius: .5rem;
   padding: .775rem 1rem;
@@ -38,12 +52,17 @@ input, textarea{
   font-size: .875rem;
   font-weight: 700;
   font-style: normal;
+  cursor: pointer;
+  color: $blue__100;
+
+  &:hover{
+    transform: scale(1.04);
+    letter-spacing: 0.4em;
+  }
 }
 
 .btnLogin:hover{
   background-color: $blue__20;
-  transform: scale(1.04);
-  letter-spacing: 0.4em;
 }
 
 .btnBlue{
@@ -52,10 +71,38 @@ input, textarea{
 
   &:hover{
     background-color: $blue__80;
-    transform: scale(1.04);
-   letter-spacing: 0.1em;
   }
 }
+
+.btnEntrar{
+  width: 100%;
+  color: $white;
+  background-color: $blue__100;
+  &:hover{
+    background-color: $blue__80;
+  }
+}
+
+.btnFechar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  color: $blue__80;
+
+  &:hover{
+    letter-spacing: normal;
+    color: $blue__100;
+  }
+}
+
+.btnAddProd{
+  &:hover{
+    letter-spacing: normal;
+  }
+}
+
 
 .btnSubmitMensagem{
   width: 100%;
@@ -66,6 +113,12 @@ input, textarea{
     background-color: $blue__80;
 
   }
+}
+
+.validador__input{
+  display: inline-block;
+  color: $red__50;
+  margin-top: .5rem;
 }
 
 .ver__tudo a{

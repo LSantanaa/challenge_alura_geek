@@ -43,6 +43,126 @@
   } 
 }
 
+/*FORMULÁRIO*/
+.formulario__input{
+  position: relative;
+  width: 100%;
+  
+  input{
+    height: 50px;
+  }
+
+  input, textarea{
+    padding: 1rem .5rem 0;
+    border-bottom: 2px solid $black__100;
+    border-radius: .5rem;
+    width: 100%;
+  }  
+  label{
+    width: 95%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 500;
+    background-color: $white;
+    top: 0;
+    margin-top: 13px;
+  }
+}
+
+.formulario__input input:focus, textarea:focus{
+  border-bottom: 2px solid $blue__100;
+}
+
+.formulario__input input::placeholder, textarea::placeholder{
+  color:transparent;
+}
+
+.formulario__input label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.formulario__input input:focus + label,.formulario__input textarea:focus + label,
+.formulario__input input:not(:placeholder-shown) + label,.formulario__input textarea:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: $blue__100;
+}
+
+.formulario__categoria{
+  width: 100%;
+
+  .categoria__options{
+    margin-top: 1rem;
+    width: 100%;
+
+    input[type="checkbox"]{
+      opacity: 0;
+      cursor: pointer;
+      position: absolute;
+      left: 0px;
+      width: 20px;
+      height: 20px;
+       &:hover + .check::before{
+         background: $blue__80;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+       }
+     }
+
+    .check{
+      position: relative;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+        
+      &::before{
+        content: '';
+        width: 20px;
+        height: 20px;
+        border: 1px solid $blue__80;
+        border-radius: .1rem;
+        background-color: $white;
+        display: inline-block;
+        transition: all 0.5s ease;
+      }
+    }
+    input[type=checkbox]:checked + .check::before {
+      background:  url('../images/check.svg') $blue__100;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+/*LOGIN MODAL*/
+.container__modal{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($black, $alpha: .3);
+  
+  &__content{
+    position: relative;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: $white__50;
+    animation: modal-fadeIn 0.4s ease-in-out;
+  }
+
+  &__form{
+    gap: 1.5rem;
+  }
+}
 
 /*SECTION HERO*/
 
@@ -64,6 +184,10 @@
 .container__main{
   padding: 1rem;
   
+  .container__categoria{
+    margin: 2rem 0;
+  }
+
   .ver__tudo{
     gap: 4px;
     svg{
@@ -78,12 +202,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
+    li{
+      display: none;
+    }
+
+    &[data-lista-produtos] li{
+      display: block;
+      margin: 1rem 0;
+    }
+
     .list__item{
-      overflow: hidden;
       a{
         display: block;
+        height: 100%;
         &:hover {
+          transform: scale(1.05);
           .list__item__img{
             transform: scale(1.15);
           }
@@ -106,15 +240,18 @@
         gap: .5rem;
         align-items: flex-start;
       }
-    &:nth-child(n+5){
-      display: none;
+      &__title{
+        height: 40px;
+      }
+      &:nth-child(-n+4){
+        display: block;
+      }
     }
-  }
   }
 }
 
 
-/* AREA FOOTER*/
+/*AREA FOOTER*/
 .container__footer{
   padding: 1rem;
   background-color: $blue__20;
@@ -143,36 +280,11 @@
     margin-top: 2rem;
     align-items: flex-start;
     gap: .5rem;
+
     form{
       width: 100%;
       align-items: flex-start;
       gap: .5rem;
-
-      .formulario__input{
-        position: relative;
-        width: 100%;
-        
-        input{
-          height: 50px;
-        }
-
-        input, textarea{
-          padding: 1rem .5rem 0;
-          border-bottom: 2px solid $black__100;
-          border-radius: .5rem;
-          width: 100%;
-        }  
-        label{
-          width: 95%;
-          pointer-events: none;
-          position: absolute;
-          z-index: 500;
-          background-color: $white;
-          top: 0;
-          left: 8px;
-          margin-top: 13px;
-        }
-      }
     }
   }
 
@@ -186,29 +298,20 @@
   }
 }
 
-
-.formulario__input input:focus, textarea:focus{
-  border-bottom: 2px solid $blue__100;
-}
-
-.formulario__input input::placeholder, textarea::placeholder{
-  color:transparent;
-}
-
-.formulario__input label{
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 13px;
-  transition: all .3s ease-out;
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-}
-
-.formulario__input input:focus + label,.formulario__input textarea:focus + label,
-.formulario__input input:not(:placeholder-shown) + label,.formulario__input textarea:not(:placeholder-shown) + label{
-  font-size: 13px;
-  margin-top: 0;
-  color: $blue__100;
+/*PÁGINA PRODUTOS DETAILS*/
+.container__produto__detail{
+  padding: 1rem;
+  &Img{
+    width: 100%;
+    height: 192px;
+    background: url("https://source.unsplash.com/OitYIbHSyWU");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &Description{
+    margin-top: 1rem;
+    align-items: flex-start;
+    gap: .5rem;
+  }
 }
