@@ -68,10 +68,10 @@
         <div id="modalAddProduto" class="container__modal flex center">
           <div class="container__modal__content flex center">
             <button aria-label="Fechar popUp" data-btnFechar class="btn btnFechar">X</button>
-            <form class="container__modal__form flex collumn" action="">
+            <form class="container__modal__form flex collumn" data-form>
               <p>Adicionar Produto</p>
               <div class="formulario__input">
-                <input type="text" name="img" id="img" placeholder="URL da Imagem">
+                <input type="text" name="img" id="img" placeholder="URL da Imagem" required>
                 <label for="img">Url da Imagem</label>
                 <span class="validador__input"></span>
               </div>
@@ -83,7 +83,7 @@
                     <label class="check" for="console">Console</label>
                   </div>
                   <div class="flex relative">
-                    <input type="checkbox" id="starWars" value="starWars"/>
+                    <input type="checkbox" id="starWars" value="star wars"/>
                     <label class="check" for="starWars">Star Wars</label>
                   </div>
                   <div class="flex relative">
@@ -91,21 +91,21 @@
                     <label class="check" for="roupas">Roupas</label>
                   </div>
                  </div> 
-                <div class="categorias__marcadas"></div>
+                <p class="categorias__marcadas" id="categoriasMarcadas"></p>
                 <span class="validador__input"></span>
               </div>
               <div class="formulario__input">
-                <input type="text" name="nome"  id="nome" placeholder="Digite sua senha">
-                <label for="pw">Digite sua senha</label>
+                <input type="text" name="titulo"  id="titulo" placeholder="Titulo do produto" required>
+                <label for="titulo">Título do produto</label>
                 <span class="validador__input"></span>
               </div>
               <div class="formulario__input">
-                <input type="text" name="preco"  id="preco" placeholder="Preço do produto">
+                <input type="number" name="preco"  id="preco" placeholder="Preço do produto" required>
                 <label for="preco">Preço do produto</label>
                 <span class="validador__input"></span>
               </div>
               <div class="formulario__input">
-                <textarea cols="30" rows="5" name="desc" id="desc" placeholder="Descrição do produto"></textarea>
+                <textarea cols="30" rows="5" name="desc" id="desc" placeholder="Descrição do produto" required></textarea>
                 <label for="desc">Descrição do produto</label>
                 <span class="validador__input"></span>
               </div>

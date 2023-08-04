@@ -9,14 +9,11 @@ Em desenvolvimento
 ## Minha versão
 
 - Implementação de micro animações reduzindo estaticidade do projeto.
-- Informações mais dinâmicas tornando mais próximo de um projeto real.
-- Botões de filtros de categorias.
+- Informações dinâmicas tornando mais próximo de um projeto real.
 
 ### Techs
 
 - Javascript
-- Node.js
-- json-server
 - SCSS
 - HTML
   

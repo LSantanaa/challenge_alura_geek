@@ -154,7 +154,7 @@
       "id": 19,
       "titulo": "Nintendo Switch Lite",
       "categoria": "console, oferta",
-      "preco": "R$ 1500,00",
+      "preco": "<s>R$ 1800,00</s><br> R$ 1400,00",
       "descricao": "Apresentamos o Nintendo Switch Lite, uma nova versão do console Nintendo Switch que foi otimizado para o jogo pessoal e portátil. Compatível com todos os jogos digitais ou em mídia física para o Nintendo Switch que possuam modo portátil.",
       "imageURL": "https://source.unsplash.com/74kYIbjljDA"
     },
@@ -162,7 +162,7 @@
       "id": 20,
       "titulo": "Playstation 4",
       "categoria": "console, oferta",
-      "preco": "R$ 2800,00",
+      "preco": "<s>R$ 28000,00</s> <br>R$ 1960,00",
       "descricao": "Com seu console PlayStation 4 você terá entretenimento garantido todos os dias. Sua tecnologia foi criada para colocar novos desafios para jogadores novatos e especialistas. Com o console PlayStation 4, líder mundial de vendas por anos, você poderá desfrutar de horas de jogo e excelente navegabilidade para desfrutar de filmes, séries e conteúdo online",
       "imageURL": "https://source.unsplash.com/mwytIca3qNA"
     },
@@ -170,7 +170,7 @@
       "id": 21,
       "titulo": "Camiseta Star Wars",
       "categoria": "roupas, star wars, oferta",
-      "preco": "R$ 70,00",
+      "preco": "<s>R$ 49,00</s> <br>R$ 39,00" ,
       "descricao": "Mostre sua devoção à galáxia muito, muito distante com esta camiseta Star Wars. Estampada com a logo clássica exibida em todos os filmes da saga, esta camiseta é uma adição incrível para o seu guarda-roupa.",
       "imageURL": "https://images.tcdn.com.br/img/img_prod/723087/camiseta_star_wars_logo_8165_1_216d07bf81585c9a23a12c0a3924c619.png"
     },
@@ -178,7 +178,7 @@
       "id": 22,
       "titulo": "Camiseta Playstation",
       "categoria": "roupas, console, oferta",
-      "preco": "R$ 70,00",
+      "preco": "<s>R$ 49,00</s><br> R$ 39,00",
       "descricao": "Exiba sua paixão pelos jogos com esta camiseta Playstation. Com o logotipo reconhecível da marca estampado na frente, esta camiseta é uma escolha elegante e confortável para os fãs leais da plataforma de jogos. Seja você um jogador casual ou hardcore, esta camiseta é perfeita para mostrar seu orgulho gamer.",
       "imageURL": "https://www.camisetas4fun.com.br/media/product/05f/camiseta-playstation-6bd.jpg"
     },
@@ -186,7 +186,7 @@
       "id": 23,
       "titulo": "Action Figure Luke Skywalker",
       "categoria": "star wars, oferta",
-      "preco": "R$ 70,00",
+      "preco": "<s>R$ 70,00</s><br> R$ 46,90",
       "descricao": "Recrie as emocionantes batalhas das estrelas com esta action figure detalhada do Luke Skywalker. Inspirado na clássica trilogia de Star Wars, este boneco articulado permite que você viva aventuras galácticas e cenas emblemáticas do herói. Com sua capa, sabre de luz e acessórios, esta figura é um must-have para qualquer coleção de Star Wars.",
       "imageURL": "https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/2793dc5bb68a428db1f4334e59e01209_Original.jpg"
     },
@@ -194,7 +194,7 @@
       "id": 24,
       "titulo": "Action Figure Iron Man",
       "categoria": "oferta",
-      "preco": "R$ 70,00",
+      "preco": "<s>R$ 70,00</s><br> R$ 46,90",
       "descricao": "Prepare-se para salvar o mundo com esta action figure do Iron Man. Inspirada nos filmes da Marvel, esta figura articulada permite que você entre na pele do poderoso Tony Stark e crie suas próprias batalhas épicas. Com detalhes impressionantes e acessórios adicionais, esta figura é um item indispensável para fãs dos Vingadores e do Universo Cinematográfico Marvel.",
       "imageURL": "https://images.yampi.me/assets/stores/minidengo/uploads/images/action-figure-homem-de-ferro-iron-man-mark-mk7-a-mk7-a-boxed-60f1af313b0d8-large.jpg"
     }

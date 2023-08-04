@@ -1,3 +1,5 @@
-import openModal from "./modules/modalLoginController.js";
+import categoriasCheck from "./modules/checkCategoria.js";
+import openModal from "./modules/modalsControllers.js";
 
 openModal();
+categoriasCheck();
