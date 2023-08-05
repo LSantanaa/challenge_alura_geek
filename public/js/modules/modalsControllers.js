@@ -19,6 +19,7 @@ export default function openModal(){
     modalController(modalAddproduto, btnAddProduto, btnFechar)
   }
 
+  //controla a abertura e fechamento dos modais 
   function modalController(modal, btnOpenModal, btnCloseModal){
     btnOpenModal.addEventListener('click', (e)=>{
       document.body.style.overflow = "hidden";

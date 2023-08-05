@@ -26,9 +26,9 @@
       </a>
     </div>
 
-    <div class="container__header__pesquisa">
+    <div class="container__header__pesquisa" id="formSearch">
       <form action="" class="flex between">
-        <input type="search" name="search" id="search" placeholder="O que você deseja encontrar?" data-search>
+        <input type="search" name="search" id="searchValue" placeholder="O que você deseja encontrar?" data-search>
         <button data-btn-search class="btn__search" type="submit">Search</button>
       </form>
     </div>
@@ -61,12 +61,22 @@
 
   <main class="container__main  m__auto container__lg">
     <div class="container__categoria">
+
+      <!-- <div class="flex between">
+        <button class="btn btnFilter">Star Wars</button>
+        <button class="btn btnFilter">Console</button>
+        <button class="btn btnFilter">Roupas</button>
+        <button class="btn btnFilter">Ofertas</button>
+        
+      </div> -->
+
       <div class="flex between">
         <h2>Todos os produtos</h2>
         <div class="flex">
          <button id="btnAddProd" class="btn btnAddProd">Adicionar Produto</button>
         </div>
 
+        <!--MODAL ADD PRODUTO-->
         <div id="modalAddProduto" class="container__modal flex center">
           <div class="container__modal__content flex center">
             <button aria-label="Fechar popUp" data-btnFechar class="btn btnFechar">X</button>
@@ -115,7 +125,7 @@
             </form>
           </div>
         </div>
-
+        
       </div>
       <ul class="container__main__list" data-lista-produtos>
         

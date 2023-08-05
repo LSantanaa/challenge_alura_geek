@@ -24,7 +24,24 @@ function addProduto(titulo, categoria, preco, descricao, imageURL){
   localStorage.setItem('produtos', JSON.stringify(listProdutos));
 }
 
+function buscaProduto(query, data){
+ const queryLowerCase = query.toLowerCase();
+ return data.filter(produto => {
+  for (const chave in produto) {
+    if(chave === 'id' || chave === 'imageURL'){
+      continue;
+    }
+    if (produto[chave].toString().toLowerCase().includes(queryLowerCase)) {
+      return produto;
+    }
+  }
+  return false;
+  })
+}
+
+
 export const conectApi ={
   productList,
-  addProduto
+  addProduto,
+  buscaProduto
 }

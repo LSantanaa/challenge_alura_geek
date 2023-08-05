@@ -3,6 +3,7 @@ import { conectApi } from "./conexao.js";
   const content = document.querySelector('[data-content]');
   const url = './src/api/database.json';
 
+  //função responsavel por criar as ULs com as categorias dos produtos
   function renderListas(categoria){
     const divCategoria = document.createElement('div');
     divCategoria.classList.add('container__categoria');
@@ -20,6 +21,7 @@ import { conectApi } from "./conexao.js";
     return divCategoria;
   }
 
+  //função para criar a li contendo as informações do produto
   function renderProdutos(titulo, preco, img, link){
     const produto = document.createElement("li");
     produto.className = "list__item";
@@ -39,6 +41,7 @@ import { conectApi } from "./conexao.js";
       return produto;  
   }
 
+  //filtrando produtos da api de acordo com a categoria
   function filter(listCategoria, listProd){
     const starWarsProducts = listProd.filter((produto) => produto.categoria.includes('star wars'));
     const consoleProducts = listProd.filter((produto) => produto.categoria.includes('console'));
@@ -70,6 +73,8 @@ import { conectApi } from "./conexao.js";
 
   }
   
+  //função que chama a api com os produtos e categorias e usa as funções para filtrar e colocar em cada ul as li correspondentes a categoria,
+  //também salva em localhost para evitar varias requisições na pagina
   async function listaProdutos(){
     if(content){
       try {
@@ -77,13 +82,11 @@ import { conectApi } from "./conexao.js";
         const produtosLocal = JSON.parse(localStorage.getItem('produtos'));
 
         if(produtosLocal){
-          console.log('local')
           const produtos = produtosLocal;
           const categorias = categoriasLocal;
           filter(categorias, produtos);
         }
         else{
-          console.log('api')
           const listProductsApi = await conectApi.productList(url);
           const categorias = await listProductsApi.categorias;
           const produtos = await listProductsApi.produtos;
@@ -101,6 +104,7 @@ import { conectApi } from "./conexao.js";
     }
   }
 
+  //funções reutilizáveis
   export const render = {
     listaProdutos,
     renderProdutos
