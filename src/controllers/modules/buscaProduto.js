@@ -16,6 +16,10 @@ export default function search(){
       localStorage.setItem('resultadoBusca', JSON.stringify(resultBusca));
       window.location.href = './src/views/produtos.html';
     }
+    if(origem === 'prodDetail'){
+      localStorage.setItem('resultadoBusca', JSON.stringify(resultBusca));
+      window.location.href = './produtos.html';
+    }
     if(origem === 'produtos'){
       renderizaProdutos(resultBusca)
     }

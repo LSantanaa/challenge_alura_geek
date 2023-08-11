@@ -12,12 +12,12 @@ export default async function renderAllProducts(){
         
         if(prodLocal){
           const produtos = prodLocal;
-          produtos.forEach(produto => listaTodosProdutos.appendChild(render.renderProdutos(produto.titulo, produto.preco, produto.imageURL, "./produtoDetail.html")));
+          produtos.forEach(produto => listaTodosProdutos.appendChild(render.renderProdutos(produto.titulo, produto.preco, produto.imageURL, "./produtoDetail.html", produto.descricao, produto.categoria)));
         }
         else{
           const listProductsApi = await conectApi.productList(url) ;
           const produtos = await listProductsApi.produtos;
-          produtos.forEach(produto => listaTodosProdutos.appendChild(render.renderProdutos(produto.titulo, produto.preco, produto.imageURL, "./produtoDetail.html")));
+          produtos.forEach(produto => listaTodosProdutos.appendChild(render.renderProdutos(produto.titulo, produto.preco, produto.imageURL, "./produtoDetail.html", produto.descricao, produto.categoria)));
 
           if(produtos.length > 0){
             localStorage.setItem('produtos', JSON.stringify(produtos))

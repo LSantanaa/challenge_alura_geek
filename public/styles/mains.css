@@ -409,13 +409,13 @@ input, textarea, select {
   display: block;
   height: 100%;
 }
-.container__main__list .list__item a:hover {
+.container__main__list .list__item:hover {
   transform: scale(1.05);
 }
-.container__main__list .list__item a:hover .list__item__img {
+.container__main__list .list__item:hover .list__item__img {
   transform: scale(1.15);
 }
-.container__main__list .list__item a:hover .list__item__verProd {
+.container__main__list .list__item:hover .list__item__verProd {
   color: #5595e9;
 }
 .container__main__list .list__item__containerImg {
@@ -489,11 +489,14 @@ input, textarea, select {
 }
 .container__produto__detailImg {
   width: 100%;
-  height: 192px;
-  background: url("https://source.unsplash.com/OitYIbHSyWU");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 300px;
+}
+.container__produto__detailImg img {
+  width: 100%;
+  height: 100%;
+}
+.container__produto__detail .desc {
+  max-width: 500px;
 }
 .container__produto__detailDescription {
   margin-top: 1rem;
@@ -561,6 +564,10 @@ input, textarea, select {
   }
   .container__produto__detailContent {
     flex-direction: row;
+  }
+  .container__produto__detailImg {
+    width: 480px;
+    height: 420px;
   }
   .container__produto__detailDescription {
     margin-top: 0;

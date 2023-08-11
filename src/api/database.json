@@ -131,7 +131,7 @@
       "titulo": "Camiseta Marvel",
       "categoria": "roupas",
       "preco": "R$ 70,00",
-      "descricao": "Junte-se aos heróis mais poderosos da Terra com esta camiseta da Marvel. Apresentando uma estampa impressionante com os personagens icônicos da Marvel, esta camiseta é uma declaração de estilo para os fãs do universo dos quadrinhos e filmes.",
+      "descricao": "Se você é fã da Marvel com certeza precisa dessa camiseta com a logo mais famosa dos quadrinhos estampada na frente. Uma marca que inspira gerações e uma verdadeira fábrica de heróis e vilões, vista-se com uma das maiores produtoras de quadrinhos do mundo",
       "imageURL": "https://source.unsplash.com/DaMkKmlloc0"
     },
     {
@@ -153,7 +153,7 @@
     {
       "id": 19,
       "titulo": "Nintendo Switch Lite",
-      "categoria": "console, oferta",
+      "categoria": "oferta, console",
       "preco": "<s>R$ 1800,00</s><br> R$ 1400,00",
       "descricao": "Apresentamos o Nintendo Switch Lite, uma nova versão do console Nintendo Switch que foi otimizado para o jogo pessoal e portátil. Compatível com todos os jogos digitais ou em mídia física para o Nintendo Switch que possuam modo portátil.",
       "imageURL": "https://source.unsplash.com/74kYIbjljDA"
@@ -161,7 +161,7 @@
     {
       "id": 20,
       "titulo": "Playstation 4",
-      "categoria": "console, oferta",
+      "categoria": "oferta, console",
       "preco": "<s>R$ 28000,00</s> <br>R$ 1960,00",
       "descricao": "Com seu console PlayStation 4 você terá entretenimento garantido todos os dias. Sua tecnologia foi criada para colocar novos desafios para jogadores novatos e especialistas. Com o console PlayStation 4, líder mundial de vendas por anos, você poderá desfrutar de horas de jogo e excelente navegabilidade para desfrutar de filmes, séries e conteúdo online",
       "imageURL": "https://source.unsplash.com/mwytIca3qNA"
@@ -169,7 +169,7 @@
     {
       "id": 21,
       "titulo": "Camiseta Star Wars",
-      "categoria": "roupas, star wars, oferta",
+      "categoria": "oferta, roupas, star wars",
       "preco": "<s>R$ 49,00</s> <br>R$ 39,00" ,
       "descricao": "Mostre sua devoção à galáxia muito, muito distante com esta camiseta Star Wars. Estampada com a logo clássica exibida em todos os filmes da saga, esta camiseta é uma adição incrível para o seu guarda-roupa.",
       "imageURL": "https://images.tcdn.com.br/img/img_prod/723087/camiseta_star_wars_logo_8165_1_216d07bf81585c9a23a12c0a3924c619.png"
@@ -177,7 +177,7 @@
     {
       "id": 22,
       "titulo": "Camiseta Playstation",
-      "categoria": "roupas, console, oferta",
+      "categoria": "oferta, roupas, console",
       "preco": "<s>R$ 49,00</s><br> R$ 39,00",
       "descricao": "Exiba sua paixão pelos jogos com esta camiseta Playstation. Com o logotipo reconhecível da marca estampado na frente, esta camiseta é uma escolha elegante e confortável para os fãs leais da plataforma de jogos. Seja você um jogador casual ou hardcore, esta camiseta é perfeita para mostrar seu orgulho gamer.",
       "imageURL": "https://www.camisetas4fun.com.br/media/product/05f/camiseta-playstation-6bd.jpg"
@@ -185,7 +185,7 @@
     {
       "id": 23,
       "titulo": "Action Figure Luke Skywalker",
-      "categoria": "star wars, oferta",
+      "categoria": "oferta, star wars",
       "preco": "<s>R$ 70,00</s><br> R$ 46,90",
       "descricao": "Recrie as emocionantes batalhas das estrelas com esta action figure detalhada do Luke Skywalker. Inspirado na clássica trilogia de Star Wars, este boneco articulado permite que você viva aventuras galácticas e cenas emblemáticas do herói. Com sua capa, sabre de luz e acessórios, esta figura é um must-have para qualquer coleção de Star Wars.",
       "imageURL": "https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/2793dc5bb68a428db1f4334e59e01209_Original.jpg"

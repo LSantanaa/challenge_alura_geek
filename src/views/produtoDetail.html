@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./public/images/logoAlura.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="../../public/images/logoAlura.svg" type="image/x-icon">
+
 
   <!-- SCSS -->
   <link rel="stylesheet" href="../../public/styles/mains.css">
@@ -28,7 +29,7 @@
 
     <div class="container__header__pesquisa">
       <form action="" class="flex between">
-        <input type="search" name="search" id="search" placeholder="O que você deseja encontrar?" data-search>
+        <input type="search" name="search" id="searchValue" placeholder="O que você deseja encontrar?" data-search>
         <button data-btn-search class="btn__search" type="submit">Search</button>
       </form>
     </div>
@@ -59,16 +60,8 @@
   </header>
 
   <section class="container__produto__detail m__auto container__lg">
-    <div class="container__produto__detailContent flex collumn ">
-      <div class="container__produto__detailImg">
-       
-      </div>
-
-      <div class="container__produto__detailDescription flex collumn">
-        <h1 class="title">Caneca Stormtrooper</h1>
-        <p>R$ 60,00</p>
-        <p>Desperte a força do seu café da manhã com esta incrível caneca temática do Stormtrooper. Feita de cerâmica de alta qualidade, esta caneca apresenta um design detalhado e autêntico do icônico soldado do Império Galáctico. Perfeita para fãs de Star Wars e colecionadores, é também uma excelente opção de presente para qualquer entusiasta da saga.</p>
-      </div>
+    <div class="container__produto__detailContent flex collumn " data-prodDetail>
+     
 
     </div>
   </section>  
@@ -83,80 +76,8 @@
           <img src="../../public/images/arrow_back_black.svg" onload="SVGInject(this)" alt="arrow right">
         </div>
       </div>
-      <ul class="container__main__list" data-lista-produtos>
-        <li class="list__item">
-            <a href="">
-              <div class="list__item__containerImg">
-                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
-              </div>
-              <div class="list__item__description flex collumn">
-                <p class="list__item___title">Produto</p>
-                <p class="list__item__preco">R$ 60,00</p>
-                <p class="list__item__verProd">Ver Produto </p>
-              </div>
-            </a>
-        </li>
-        <li class="list__item">
-            <a href="#">
-              <div class="list__item__containerImg">
-                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
-              </div>
-              <div class="list__item__description flex collumn">
-                <p class="list__item___title">Produto</p>
-                <p class="list__item__preco">R$ 60,00</p>
-                <p class="list__item__verProd">Ver Produto </p>
-              </div>
-            </a>
-        </li>
-        <li class="list__item">
-            <a href="">
-              <div class="list__item__containerImg">
-                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
-              </div>
-              <div class="list__item__description flex collumn">
-                <p class="list__item___title">Produto</p>
-                <p class="list__item__preco">R$ 60,00</p>
-                <p class="list__item__verProd">Ver Produto </p>
-              </div>
-            </a>
-        </li>
-        <li class="list__item">
-            <a href="">
-              <div class="list__item__containerImg">
-                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
-              </div>
-              <div class="list__item__description flex collumn">
-                <p class="list__item___title">Produto</p>
-                <p class="list__item__preco">R$ 60,00</p>
-                <p class="list__item__verProd">Ver Produto </p>
-              </div>
-            </a>
-        </li>
-        <li class="list__item">
-            <a href="">
-              <div class="list__item__containerImg">
-                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
-              </div>
-              <div class="list__item__description flex collumn">
-                <p class="list__item___title">Produto</p>
-                <p class="list__item__preco">R$ 60,00</p>
-                <p class="list__item__verProd">Ver Produto </p>
-              </div>
-            </a>
-        </li>
-        <li class="list__item">
-            <a href="">
-              <div class="list__item__containerImg">
-                <img class="list__item__img" src="https://source.unsplash.com/OitYIbHSyWU" alt="">
-              </div>
-              <div class="list__item__description flex collumn">
-                <p class="list__item___title">Produto</p>
-                <p class="list__item__preco">R$ 60,00</p>
-                <p class="list__item__verProd">Ver Produto </p>
-              </div>
-            </a>
-        </li>
-       
+      <ul class="container__main__list" data-lista-produtosSemelhantes>
+   
       </ul>
     </div>
   </main>
@@ -201,5 +122,6 @@
   </footer>
 
   <script type="module" src="../../public/js/app.js"></script>
+  <script type="module" src="../controllers/main.js"></script>
 </body>
 </html>
